@@ -1,0 +1,38 @@
+interface Trabalhador {
+    void trabalhar();
+}
+
+class Estudante {
+    protected String nome;
+    protected String curso;
+
+    public Estudante(String nome, String curso) {
+        this.nome = nome;
+        this.curso = curso;
+    }
+
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Curso: " + curso);
+    }
+}
+
+class Estagiario extends Estudante implements Trabalhador {
+    public Estagiario(String nome, String curso) {
+        super(nome, curso);
+    }
+
+    @Override
+    public void trabalhar() {
+        System.out.println("Estagiário trabalhando...");
+    }
+}
+
+public class Empresa {
+    public static void main(String[] args) {
+        Estagiario estagiario = new Estagiario("João", "Engenharia");
+
+        estagiario.exibirInformacoes();
+        estagiario.trabalhar();
+    }
+}
