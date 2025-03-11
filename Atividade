@@ -1,0 +1,7 @@
+
+Herança permite que diferentes classes compartilhem as mesmas caracteristicas.
+
+É para receber os atributos corretamente de uma superclasse
+
+Permite que objetos de diferentes classes sejam tratados como objetos de uma classe baseem  comum facilitando a reutilização de código.
+
